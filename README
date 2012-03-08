@@ -2,7 +2,7 @@ A simple script for managing Redmine users from command line.
 Usage: runner change_passwd.rb [options]
     -l, --list                       List the exisitng redmine users 
     -a, --add                        Add a new user (interactive mode) 
-    -d, --delete=MANDATORY           Add a new user (interactive  mode) 
+    -d, --delete=MANDATORY           Delete a new user (interactive  mode) 
     -p, --password=MANDATORY         Change user password  
 
 Run this script using runner in script directory.
