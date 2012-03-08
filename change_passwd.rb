@@ -126,6 +126,7 @@ begin
   #   raise new Exception
   # end
 rescue 
+  ### TODO: this is wrong since $! is a runner 
   puts $!
   puts optparse
 end
