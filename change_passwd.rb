@@ -1,3 +1,11 @@
+#!/usr/bin/env ruby
+require File.expand_path('../../config/boot',  __FILE__)
+
+options = { :environment => (ENV['RAILS_ENV'] || "development").dup }
+ENV["RAILS_ENV"] = options[:environment]
+RAILS_ENV.replace(options[:environment]) if defined?(RAILS_ENV)
+
+require RAILS_ROOT + '/config/environment'
 
 ### run this script using runner
 require 'optparse'
